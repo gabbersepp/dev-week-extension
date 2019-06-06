@@ -1,5 +1,6 @@
 import Vue, { CreateElement } from 'vue';
 import App from './App';
+import "./style/main.scss";
 
 Vue.config.productionTip = false;
 
