@@ -24,7 +24,8 @@ var data = elements.map(e => {
     return {
         date: e.querySelector(".a-time__date").innerText,
         from: getTime(fromText),
-        to: getTime(toText)
+        to: getTime(toText),
+		title: e.querySelector(".o-card__title").innerText
     }
 });
 
@@ -33,16 +34,4 @@ var grouped = groupBy(data, x => x.date);
 Object.keys(grouped).forEach(key => {
     var array = grouped[key];
     grouped[key] = array.sort(x => x.from[0]);
-})
-
-var container = document.createElement("div");
-container.id = "jb-container";
-
-document.body.appendChild(container);
-
-Object.keys(grouped).map(key => {
-    const dayContainer = document.createElement("div");
-    dayContainer.id = "day-" + key;
-    container.appendChild(dayContainer);
-    
 })
