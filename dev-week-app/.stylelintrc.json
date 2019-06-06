@@ -1,0 +1,21 @@
+{
+  "extends": "./node_modules/stylelint-config-standard/index.js",
+  "rules": {
+    "indentation": 4,
+    "no-eol-whitespace": null,
+    "length-zero-no-unit": null,
+    "color-hex-length": null,
+    "number-leading-zero": null,
+    "shorthand-property-no-redundant-values": null,
+    "declaration-empty-line-before": null,
+    "at-rule-empty-line-before": null,
+    "max-empty-lines": null,
+    "comment-whitespace-inside": null,
+    "at-rule-no-unknown": [true, { "ignoreAtRules": ["include", "extend", "mixin", "if", "else", "function", "return", "content", "at-root"] }],
+    "selector-pseudo-element-colon-notation": null,
+    "no-descending-specificity": null,
+    "unit-blacklist": ["px"],
+    "function-blacklist": ["rgb", "rgba"],
+    "declaration-property-value-blacklist": {"/.*/": ["/#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})/", "/url\\(.*\\)/"]}
+  }
+}

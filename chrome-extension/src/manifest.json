@@ -1,0 +1,26 @@
+{
+    "name": "Developer Week Calendar View",
+    "version": "1.0",
+    "description": "Shows a better overview about the choosen program.",
+    "permissions": [ 
+        "activeTab", 
+        "tabs", 
+        "declarativeContent", 
+        "storage",
+        "http://*/",
+        "https://*/"
+    ],
+    "icons": {
+        "16": "16x16.png",
+        "32": "32x32.png",
+        "48": "48x48.png",
+        "128": "128x128.png"
+    },
+    "content_scripts": [
+        {
+            "js": ["app.js"],
+            "matches": ["<all_urls>"]
+        }
+    ],
+    "manifest_version": 2
+}

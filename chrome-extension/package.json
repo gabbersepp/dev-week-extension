@@ -1,0 +1,11 @@
+{
+  "name": "chrome-extension",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build/scripts/build.js"
+  },
+  "devDependencies": {
+    "glob": "~7.1.3"
+  }
+}

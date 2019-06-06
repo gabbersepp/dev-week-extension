@@ -1,0 +1,71 @@
+{
+  "extends": "tslint:latest",
+  "rules": {
+    "adjacent-overload-signatures": false,
+    "align": [true,
+      "parameters",
+      "statements"
+    ],
+    "array-type": false,
+    "comment-format": false,
+    "eofline": false,
+    "forin": false,
+    "interface-name": false,
+    "max-classes-per-file": false,
+    "max-line-length": [true, 130],
+    "member-ordering": false,
+    "no-angle-bracket-type-assertion": false,
+    "no-consecutive-blank-lines": false,
+    "no-console": false,
+    "no-empty-interface": false,
+    "no-implicit-dependencies": false,
+    "no-node-module-import": true,
+    "no-object-literal-type-assertion": false,
+    "no-require-imports": true,
+    "no-trailing-whitespace": false,
+    "object-literal-key-quotes": [true, "as-needed"],
+    "object-literal-shorthand": false,
+    "object-literal-sort-keys": false,
+    "one-line": [true,
+      "check-open-brace",
+      "check-catch",
+      "check-else",
+      "check-finally",
+      "check-whitespace"
+    ],
+    "ordered-imports": false,
+    "prefer-conditional-expression": false,
+    "prefer-for-of": false,
+    "quotemark": false,
+    "triple-equals": true,
+    "trailing-comma": [true, {
+      "multiline": "never",
+      "singleline": "never"
+    }],
+    "typedef": [true,
+      "call-signature",
+	    "arrow-call-signature",
+      "parameter",
+	    "arrow-parameter",
+      "property-declaration",
+      "variable-declaration",
+      "member-variable-declaration"
+    ],
+    "typedef-whitespace": [true, {
+      "call-signature": "nospace",
+      "index-signature": "nospace",
+      "parameter": "nospace",
+      "property-declaration": "nospace",
+      "variable-declaration": "nospace"
+    }],
+    "variable-name": false,
+    "whitespace": [true,
+      "check-branch",
+      "check-decl",
+      "check-operator",
+      "check-module",
+      "check-separator",
+      "check-type"
+    ]
+  }
+}
