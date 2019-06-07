@@ -31,7 +31,8 @@ export function getData(): {[key: string]: ITalk[]} {
             date: e.querySelector(".a-time__date").innerText,
             from: getTime(fromText),
             to: getTime(toText),
-            title: e.querySelector(".o-card__title").innerText
+            title: e.querySelector(".o-card__title").innerText,
+            id: e.querySelector("input[type='checkbox']").value
         }
     });
     
