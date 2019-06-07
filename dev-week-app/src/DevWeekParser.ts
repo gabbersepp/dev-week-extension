@@ -19,7 +19,7 @@ function getTime(str: any) {
 }
 
 export function getData(): {[key: string]: ITalk[]} {
-    var elements: any = document.getElementsByClassName("o-card__table");´
+    var elements: any = document.getElementsByClassName("o-card__table");
     //console.log(elements);
     elements = [...elements];
     

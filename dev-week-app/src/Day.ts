@@ -25,7 +25,6 @@ export default class Day extends Vue {
     }
 
     private hasIntersection(t1: ITalk, t2: ITalk): boolean {
-        const b1: boolean = t1 != t2 && t1.from[0] >= t2.from[0] && t1.from[0] < t2.to[0];
-        return b1;
+        return t1 !== t2 && t1.from[0] === t2.from[0] && t1.from[1] === t2.from[1];
     }
 }

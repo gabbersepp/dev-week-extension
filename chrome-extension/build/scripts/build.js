@@ -21,6 +21,12 @@ devweekappBuild.on("close", code => {
         fetchExtension();
     }
 });
+devweekappBuild.stdout.on('data', function(data) {
+    console.log(data.toString()); 
+});
+devweekappBuild.stderr.on('data', function(data) {
+    console.log(data.toString()); 
+});
 
 function ensureOutDir() {
     if(!fs.existsSync(path.join(extensionBuildDir, "out/dev-week-app"))) {
