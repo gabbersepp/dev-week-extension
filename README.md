@@ -1,6 +1,6 @@
 # dev-week-extension
 
-I wanted a better overveiw about my choosen schedule at developer week in nuremberg.
+I wanted a better overveiw about my choosen schedule at developer week in nuremberg. So I build a quick and dirty (very dirty) chrome extension with vue.
 
 Open View:
 ![alt text](img2.JPG)
