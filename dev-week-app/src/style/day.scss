@@ -1,5 +1,9 @@
-.talk {
-    &.talk--conflict {
-        color: red;
+.dev-week-app-day {
+    border: 1px solid black;
+    padding: 5px;
+    .dev-week-app-talk {
+        &.talk--conflict {
+            color: red;
+        }
     }
 }

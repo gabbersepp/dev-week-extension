@@ -1,8 +1,12 @@
 <template>
-    <div id="dev-week-app" ref="mainRef">
-        <div v-for="key in Object.keys(calendar)" :key="key">
-            <Day v-bind:talks="calendar[key]"/>
+    <div>
+        <div id="dev-week-app" ref="mainRef">
+            <template v-for="key in Object.keys(calendar)">
+                <Day v-bind:talks="calendar[key]" :key="key" v-if="showCalendar"/>
+            </template>
         </div>
+        <Control/>
     </div>
+
 </template>
 <script lang="ts" src="./App.ts"/>
