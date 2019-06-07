@@ -5,7 +5,7 @@
                 <Day v-bind:talks="calendar[key]" :key="key" v-if="showCalendar"/>
             </template>
         </div>
-        <Control/>
+        <Control :showCalendar="showCalendar" :onChange="onChangeVisibility"/>
     </div>
 
 </template>
