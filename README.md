@@ -8,3 +8,4 @@ Open View:
 View:
 ![alt text](img1.JPG)
 
+Install the chrome extension as unpacked extension. use the zip archive in the repo root
